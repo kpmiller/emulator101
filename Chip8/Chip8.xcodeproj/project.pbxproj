@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F075DFD7147CC70D00ECCB2B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F075DFD6147CC70D00ECCB2B /* Cocoa.framework */; };
+		F075DFE1147CC70D00ECCB2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F075DFDF147CC70D00ECCB2B /* InfoPlist.strings */; };
+		F075DFE3147CC70D00ECCB2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F075DFE2147CC70D00ECCB2B /* main.m */; };
+		F075DFEA147CC70D00ECCB2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F075DFE9147CC70D00ECCB2B /* AppDelegate.m */; };
+		F075DFED147CC70E00ECCB2B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F075DFEB147CC70E00ECCB2B /* MainMenu.xib */; };
+		F075DFF5147CC79200ECCB2B /* Chip8View.m in Sources */ = {isa = PBXBuildFile; fileRef = F075DFF4147CC79200ECCB2B /* Chip8View.m */; };
+		F075DFF8147CCD8800ECCB2B /* Chip8Machine.m in Sources */ = {isa = PBXBuildFile; fileRef = F075DFF7147CCD8800ECCB2B /* Chip8Machine.m */; };
+		F075DFFC147CCE9300ECCB2B /* Chip8 Picture.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = F075DFF9147CCE9300ECCB2B /* Chip8 Picture.ch8 */; };
+		F075DFFD147CCE9300ECCB2B /* Maze.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = F075DFFA147CCE9300ECCB2B /* Maze.ch8 */; };
+		F075DFFE147CCE9300ECCB2B /* Fishie.ch8 in Resources */ = {isa = PBXBuildFile; fileRef = F075DFFB147CCE9300ECCB2B /* Fishie.ch8 */; };
+		F075E003147CCEF400ECCB2B /* chip8emu.c in Sources */ = {isa = PBXBuildFile; fileRef = F075DFFF147CCEF400ECCB2B /* chip8emu.c */; };
+		F075E004147CCEF400ECCB2B /* font4x5.c in Sources */ = {isa = PBXBuildFile; fileRef = F075E001147CCEF400ECCB2B /* font4x5.c */; };
+		F075E00A147DE6E100ECCB2B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F075E009147DE6E100ECCB2B /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F075DFD2147CC70D00ECCB2B /* Chip8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chip8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F075DFD6147CC70D00ECCB2B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F075DFD9147CC70D00ECCB2B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F075DFDA147CC70D00ECCB2B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F075DFDB147CC70D00ECCB2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F075DFDE147CC70D00ECCB2B /* Chip8-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Chip8-Info.plist"; sourceTree = "<group>"; };
+		F075DFE0147CC70D00ECCB2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F075DFE2147CC70D00ECCB2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F075DFE4147CC70D00ECCB2B /* Chip8-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chip8-Prefix.pch"; sourceTree = "<group>"; };
+		F075DFE8147CC70D00ECCB2B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F075DFE9147CC70D00ECCB2B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F075DFEC147CC70E00ECCB2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F075DFF3147CC79200ECCB2B /* Chip8View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chip8View.h; sourceTree = "<group>"; };
+		F075DFF4147CC79200ECCB2B /* Chip8View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chip8View.m; sourceTree = "<group>"; };
+		F075DFF6147CCD8800ECCB2B /* Chip8Machine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chip8Machine.h; path = Chip8/Chip8Machine.h; sourceTree = "<group>"; };
+		F075DFF7147CCD8800ECCB2B /* Chip8Machine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Chip8Machine.m; path = Chip8/Chip8Machine.m; sourceTree = "<group>"; };
+		F075DFF9147CCE9300ECCB2B /* Chip8 Picture.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chip8 Picture.ch8"; sourceTree = "<group>"; };
+		F075DFFA147CCE9300ECCB2B /* Maze.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Maze.ch8; sourceTree = "<group>"; };
+		F075DFFB147CCE9300ECCB2B /* Fishie.ch8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fishie.ch8; sourceTree = "<group>"; };
+		F075DFFF147CCEF400ECCB2B /* chip8emu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chip8emu.c; sourceTree = "<group>"; };
+		F075E000147CCEF400ECCB2B /* chip8emu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chip8emu.h; sourceTree = "<group>"; };
+		F075E001147CCEF400ECCB2B /* font4x5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = font4x5.c; sourceTree = "<group>"; };
+		F075E002147CCEF400ECCB2B /* font4x5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = font4x5.h; sourceTree = "<group>"; };
+		F075E009147DE6E100ECCB2B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F075DFCF147CC70D00ECCB2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F075E00A147DE6E100ECCB2B /* OpenGL.framework in Frameworks */,
+				F075DFD7147CC70D00ECCB2B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F075DFC7147CC70D00ECCB2B = {
+			isa = PBXGroup;
+			children = (
+				F075E009147DE6E100ECCB2B /* OpenGL.framework */,
+				F075DFF3147CC79200ECCB2B /* Chip8View.h */,
+				F075DFF4147CC79200ECCB2B /* Chip8View.m */,
+				F075DFF6147CCD8800ECCB2B /* Chip8Machine.h */,
+				F075DFF7147CCD8800ECCB2B /* Chip8Machine.m */,
+				F075DFFF147CCEF400ECCB2B /* chip8emu.c */,
+				F075E000147CCEF400ECCB2B /* chip8emu.h */,
+				F075E001147CCEF400ECCB2B /* font4x5.c */,
+				F075E002147CCEF400ECCB2B /* font4x5.h */,
+				F075DFDC147CC70D00ECCB2B /* Chip8 */,
+				F075DFD5147CC70D00ECCB2B /* Frameworks */,
+				F075DFD3147CC70D00ECCB2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F075DFD3147CC70D00ECCB2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F075DFD2147CC70D00ECCB2B /* Chip8.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F075DFD5147CC70D00ECCB2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F075DFD6147CC70D00ECCB2B /* Cocoa.framework */,
+				F075DFD8147CC70D00ECCB2B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F075DFD8147CC70D00ECCB2B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F075DFD9147CC70D00ECCB2B /* AppKit.framework */,
+				F075DFDA147CC70D00ECCB2B /* CoreData.framework */,
+				F075DFDB147CC70D00ECCB2B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F075DFDC147CC70D00ECCB2B /* Chip8 */ = {
+			isa = PBXGroup;
+			children = (
+				F075DFE8147CC70D00ECCB2B /* AppDelegate.h */,
+				F075DFE9147CC70D00ECCB2B /* AppDelegate.m */,
+				F075DFEB147CC70E00ECCB2B /* MainMenu.xib */,
+				F075DFDD147CC70D00ECCB2B /* Supporting Files */,
+			);
+			path = Chip8;
+			sourceTree = "<group>";
+		};
+		F075DFDD147CC70D00ECCB2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F075DFF9147CCE9300ECCB2B /* Chip8 Picture.ch8 */,
+				F075DFFA147CCE9300ECCB2B /* Maze.ch8 */,
+				F075DFFB147CCE9300ECCB2B /* Fishie.ch8 */,
+				F075DFDE147CC70D00ECCB2B /* Chip8-Info.plist */,
+				F075DFDF147CC70D00ECCB2B /* InfoPlist.strings */,
+				F075DFE2147CC70D00ECCB2B /* main.m */,
+				F075DFE4147CC70D00ECCB2B /* Chip8-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F075DFD1147CC70D00ECCB2B /* Chip8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F075DFF0147CC70E00ECCB2B /* Build configuration list for PBXNativeTarget "Chip8" */;
+			buildPhases = (
+				F075DFCE147CC70D00ECCB2B /* Sources */,
+				F075DFCF147CC70D00ECCB2B /* Frameworks */,
+				F075DFD0147CC70D00ECCB2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chip8;
+			productName = Chip8;
+			productReference = F075DFD2147CC70D00ECCB2B /* Chip8.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F075DFC9147CC70D00ECCB2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Apple Inc.";
+			};
+			buildConfigurationList = F075DFCC147CC70D00ECCB2B /* Build configuration list for PBXProject "Chip8" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F075DFC7147CC70D00ECCB2B;
+			productRefGroup = F075DFD3147CC70D00ECCB2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F075DFD1147CC70D00ECCB2B /* Chip8 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F075DFD0147CC70D00ECCB2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F075DFE1147CC70D00ECCB2B /* InfoPlist.strings in Resources */,
+				F075DFED147CC70E00ECCB2B /* MainMenu.xib in Resources */,
+				F075DFFC147CCE9300ECCB2B /* Chip8 Picture.ch8 in Resources */,
+				F075DFFD147CCE9300ECCB2B /* Maze.ch8 in Resources */,
+				F075DFFE147CCE9300ECCB2B /* Fishie.ch8 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F075DFCE147CC70D00ECCB2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F075DFE3147CC70D00ECCB2B /* main.m in Sources */,
+				F075DFEA147CC70D00ECCB2B /* AppDelegate.m in Sources */,
+				F075DFF5147CC79200ECCB2B /* Chip8View.m in Sources */,
+				F075DFF8147CCD8800ECCB2B /* Chip8Machine.m in Sources */,
+				F075E003147CCEF400ECCB2B /* chip8emu.c in Sources */,
+				F075E004147CCEF400ECCB2B /* font4x5.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F075DFDF147CC70D00ECCB2B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F075DFE0147CC70D00ECCB2B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F075DFEB147CC70E00ECCB2B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F075DFEC147CC70E00ECCB2B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F075DFEE147CC70E00ECCB2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F075DFEF147CC70E00ECCB2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F075DFF1147CC70E00ECCB2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chip8/Chip8-Prefix.pch";
+				INFOPLIST_FILE = "Chip8/Chip8-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F075DFF2147CC70E00ECCB2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chip8/Chip8-Prefix.pch";
+				INFOPLIST_FILE = "Chip8/Chip8-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F075DFCC147CC70D00ECCB2B /* Build configuration list for PBXProject "Chip8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F075DFEE147CC70E00ECCB2B /* Debug */,
+				F075DFEF147CC70E00ECCB2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F075DFF0147CC70E00ECCB2B /* Build configuration list for PBXNativeTarget "Chip8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F075DFF1147CC70E00ECCB2B /* Debug */,
+				F075DFF2147CC70E00ECCB2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F075DFC9147CC70D00ECCB2B /* Project object */;
+}
