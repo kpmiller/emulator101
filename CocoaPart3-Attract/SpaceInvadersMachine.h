@@ -59,4 +59,5 @@
 -(void) startEmulation;
 
 -(void *) framebuffer;
+
 @end
