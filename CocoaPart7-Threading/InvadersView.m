@@ -38,30 +38,25 @@
 
 @implementation InvadersView
 
-- (id)initWithFrame:(NSRect)frame
+- (void)awakeFromNib
 {
-    self = [super initWithFrame:frame];
-    if (self) 
-    {
-        invaders = [[SpaceInvadersMachine alloc] init];
-        
-        CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-        buffer8888 = malloc(4 * 224*256);
-        bitmapCtx = CGBitmapContextCreate(buffer8888, 224, 256, 8, 224*4, colorSpace, kCGImageAlphaNoneSkipFirst);
-        
-        //a 16ms time interval to get 60 fps
-        renderTimer = [NSTimer timerWithTimeInterval:0.016
-                                              target:self
-                                            selector:@selector(timerFired:)
-                                            userInfo:nil
-                                             repeats:YES];
-        
-        [[NSRunLoop currentRunLoop] addTimer:renderTimer forMode:NSDefaultRunLoopMode];
-        [invaders startEmulation];
-    }
+    invaders = [[SpaceInvadersMachine alloc] init];
     
-    return self;
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    buffer8888 = malloc(4 * 224*256);
+    bitmapCtx = CGBitmapContextCreate(buffer8888, 224, 256, 8, 224*4, colorSpace, kCGImageAlphaNoneSkipFirst);
+    
+    //a 16ms time interval to get 60 fps
+    renderTimer = [NSTimer timerWithTimeInterval:0.016
+                                          target:self
+                                        selector:@selector(timerFired:)
+                                        userInfo:nil
+                                         repeats:YES];
+    
+    [[NSRunLoop currentRunLoop] addTimer:renderTimer forMode:NSDefaultRunLoopMode];
+    [invaders startEmulation];
 }
+
 
 - (void)drawRect:(NSRect)dirtyRect
 {
@@ -71,7 +66,7 @@
     //Translate the 1-bit space invaders frame buffer into
     // my 32bpp RGB bitmap.  We have to rotate and
     // flip the image as we go.
-    // 
+    //
     unsigned char *b = (unsigned char *)buffer8888;
     unsigned char *fb = [invaders framebuffer];
     for (i=0; i< 224; i++)
@@ -103,8 +98,8 @@
     
     
     CGContextRef myContext = [[NSGraphicsContext currentContext] graphicsPort];
-    CGImageRef ir = CGBitmapContextCreateImage(bitmapCtx);    
-    CGContextDrawImage(myContext, self.bounds, ir); 
+    CGImageRef ir = CGBitmapContextCreateImage(bitmapCtx);
+    CGContextDrawImage(myContext, self.bounds, ir);
     CGImageRelease(ir);
 }
 
