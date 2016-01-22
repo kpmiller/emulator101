@@ -32,6 +32,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 #include "8080emu.h"
 
 

@@ -1,12 +1,10 @@
 //
-//  CPU8080.m
+//  SpaceInvadersMachine.m
 //  Invaders
 //
-//  Created by Emulator101 on 11/3/11.
-//
-//  This is a NSObject wrapper around the 8080 emulator and 
-//  All code that handles the specifics of the game implemenation.
-//
+
+#import "SpaceInvadersMachine.h"
+
 /*
  This is free and unencumbered software released into the public domain.
  
@@ -59,19 +57,19 @@
         NSLog(@"corrupted file %@?  shouldn't be this big: %ld bytes", filename, [data length]);
     }
     
-	uint8_t *buffer = &state->memory[memoffset];
+    uint8_t *buffer = &state->memory[memoffset];
     memcpy(buffer, [data bytes], [data length]);
 }
 
 -(id) init
 {
     state = calloc(sizeof(State8080), 1);
-    state->memory = malloc(16 * 0x1000);    
+    state->memory = malloc(16 * 0x1000);
     
-	[self ReadFile:@"invaders.h" IntoMemoryAt:0];
-	[self ReadFile:@"invaders.g" IntoMemoryAt:0x800];
-	[self ReadFile:@"invaders.f" IntoMemoryAt:0x1000];
-	[self ReadFile:@"invaders.e" IntoMemoryAt:0x1800];
+    [self ReadFile:@"invaders.h" IntoMemoryAt:0];
+    [self ReadFile:@"invaders.g" IntoMemoryAt:0x800];
+    [self ReadFile:@"invaders.f" IntoMemoryAt:0x1000];
+    [self ReadFile:@"invaders.e" IntoMemoryAt:0x1800];
     
     in_port1 = 0;
     
@@ -93,7 +91,7 @@
 
 -(uint8_t) InSpaceInvaders:(uint8_t) port
 {
-    unsigned char a;
+    unsigned char a = 0;
     switch(port)
     {
         case 0:
@@ -153,7 +151,6 @@
             if (ufo)
             {
                 [ufo stop];
-                [ufo release];
                 ufo = NULL;
             }
         }
@@ -192,11 +189,11 @@
 
 
 -(void) doCPU
-{    
+{
     double now = [self timeusec];
     
     if (lastTimer == 0.0)
-    {   
+    {
         lastTimer = now;
         nextInterrupt = lastTimer + 16000.0;
         whichInterrupt = 1;
@@ -213,7 +210,7 @@
         {
             GenerateInterrupt(state, 2);
             whichInterrupt = 1;
-        }    
+        }
         nextInterrupt = now+8000.0;
     }
     

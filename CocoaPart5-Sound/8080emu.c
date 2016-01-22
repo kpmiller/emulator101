@@ -625,7 +625,7 @@ int Emulate8080Op(State8080* state)
 			state->h = opcode[1];
 			state->pc++;
 			break;
-		case 0x27:                          //DAA
+		case 0x27: 
             if ((state->a &0xf) > 9)
                 state->a += 6;
             if ((state->a&0xf0) > 0x90)
