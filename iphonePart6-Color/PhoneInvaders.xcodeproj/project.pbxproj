@@ -7,161 +7,136 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F02BCEF31474938900DC15D4 /* 0.wav in Resources */ = {isa = PBXBuildFile; fileRef = F02BCEE91474938900DC15D4 /* 0.wav */; };
-		F02BCEF41474938900DC15D4 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = F02BCEEA1474938900DC15D4 /* 1.wav */; };
-		F02BCEF51474938900DC15D4 /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = F02BCEEB1474938900DC15D4 /* 2.wav */; };
-		F02BCEF61474938900DC15D4 /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = F02BCEEC1474938900DC15D4 /* 3.wav */; };
-		F02BCEF71474938900DC15D4 /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = F02BCEED1474938900DC15D4 /* 4.wav */; };
-		F02BCEF81474938900DC15D4 /* 5.wav in Resources */ = {isa = PBXBuildFile; fileRef = F02BCEEE1474938900DC15D4 /* 5.wav */; };
-		F02BCEF91474938900DC15D4 /* 6.wav in Resources */ = {isa = PBXBuildFile; fileRef = F02BCEEF1474938900DC15D4 /* 6.wav */; };
-		F02BCEFA1474938900DC15D4 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = F02BCEF01474938900DC15D4 /* 7.wav */; };
-		F02BCEFB1474938900DC15D4 /* 8.wav in Resources */ = {isa = PBXBuildFile; fileRef = F02BCEF11474938900DC15D4 /* 8.wav */; };
-		F02BCEFC1474938900DC15D4 /* 9.wav in Resources */ = {isa = PBXBuildFile; fileRef = F02BCEF21474938900DC15D4 /* 9.wav */; };
-		F02BCEFF1474946E00DC15D4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02BCEFE1474946E00DC15D4 /* AVFoundation.framework */; };
-		F0A35ECB1C49BCF900DE49A1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A35ECA1C49BCF900DE49A1 /* Default-568h@2x.png */; };
-		F0FE932014746A2900CB474C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FE931F14746A2900CB474C /* UIKit.framework */; };
-		F0FE932214746A2900CB474C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FE932114746A2900CB474C /* Foundation.framework */; };
-		F0FE932414746A2900CB474C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FE932314746A2900CB474C /* CoreGraphics.framework */; };
-		F0FE932614746A2900CB474C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FE932514746A2900CB474C /* GLKit.framework */; };
-		F0FE932814746A2900CB474C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FE932714746A2900CB474C /* OpenGLES.framework */; };
-		F0FE932E14746A2900CB474C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0FE932C14746A2900CB474C /* InfoPlist.strings */; };
-		F0FE933014746A2900CB474C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0FE932F14746A2900CB474C /* main.m */; };
-		F0FE933414746A2900CB474C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0FE933314746A2900CB474C /* AppDelegate.m */; };
-		F0FE933B14746A2900CB474C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0FE933A14746A2900CB474C /* ViewController.m */; };
-		F0FE933E14746A2900CB474C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0FE933C14746A2900CB474C /* ViewController.xib */; };
-		F0FE934F14747BB500CB474C /* SpaceInvadersMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = F0FE934E14747BB500CB474C /* SpaceInvadersMachine.m */; };
-		F0FE935214747BBD00CB474C /* 8080emu.c in Sources */ = {isa = PBXBuildFile; fileRef = F0FE935014747BBD00CB474C /* 8080emu.c */; };
-		F0FE935714747D9700CB474C /* invaders.e in Resources */ = {isa = PBXBuildFile; fileRef = F0FE935314747D9700CB474C /* invaders.e */; };
-		F0FE935814747D9700CB474C /* invaders.f in Sources */ = {isa = PBXBuildFile; fileRef = F0FE935414747D9700CB474C /* invaders.f */; };
-		F0FE935914747D9700CB474C /* invaders.g in Resources */ = {isa = PBXBuildFile; fileRef = F0FE935514747D9700CB474C /* invaders.g */; };
-		F0FE935A14747DBF00CB474C /* invaders.f in Resources */ = {isa = PBXBuildFile; fileRef = F0FE935414747D9700CB474C /* invaders.f */; };
-		F0FE935B14747DBF00CB474C /* invaders.h in Resources */ = {isa = PBXBuildFile; fileRef = F0FE935614747D9700CB474C /* invaders.h */; };
+		F0F0D8FD1C53E71800B90E9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D8FC1C53E71800B90E9B /* main.m */; };
+		F0F0D9001C53E71800B90E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D8FF1C53E71800B90E9B /* AppDelegate.m */; };
+		F0F0D9021C53E71800B90E9B /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = F0F0D9011C53E71800B90E9B /* Shader.fsh */; };
+		F0F0D9041C53E71800B90E9B /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = F0F0D9031C53E71800B90E9B /* Shader.vsh */; };
+		F0F0D9071C53E71800B90E9B /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D9061C53E71800B90E9B /* GameViewController.m */; };
+		F0F0D90A1C53E71800B90E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0F0D9081C53E71800B90E9B /* Main.storyboard */; };
+		F0F0D90C1C53E71800B90E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0F0D90B1C53E71800B90E9B /* Assets.xcassets */; };
+		F0F0D90F1C53E71800B90E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0F0D90D1C53E71800B90E9B /* LaunchScreen.storyboard */; };
+		F0F0D9181C54350C00B90E9B /* SpaceInvadersMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D9171C54350C00B90E9B /* SpaceInvadersMachine.m */; };
+		F0F0D9371C552DD300B90E9B /* 8080emu.c in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D9351C552DD300B90E9B /* 8080emu.c */; };
+		F0F0DB041C572F6100B90E9B /* invaders.e in Resources */ = {isa = PBXBuildFile; fileRef = F0F0DB001C572F4B00B90E9B /* invaders.e */; };
+		F0F0DB051C572F6100B90E9B /* invaders.f in Resources */ = {isa = PBXBuildFile; fileRef = F0F0DB011C572F4B00B90E9B /* invaders.f */; };
+		F0F0DB061C572F6100B90E9B /* invaders.g in Resources */ = {isa = PBXBuildFile; fileRef = F0F0DB021C572F4B00B90E9B /* invaders.g */; };
+		F0F0DB071C572F6100B90E9B /* invaders.h in Resources */ = {isa = PBXBuildFile; fileRef = F0F0DB031C572F4B00B90E9B /* invaders.h */; };
+		F0F0DB081C572F6100B90E9B /* 0.wav in Resources */ = {isa = PBXBuildFile; fileRef = F0F0DAF61C572F4200B90E9B /* 0.wav */; };
+		F0F0DB091C572F6100B90E9B /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = F0F0DAF71C572F4200B90E9B /* 1.wav */; };
+		F0F0DB0A1C572F6100B90E9B /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = F0F0DAF81C572F4200B90E9B /* 2.wav */; };
+		F0F0DB0B1C572F6100B90E9B /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = F0F0DAF91C572F4200B90E9B /* 3.wav */; };
+		F0F0DB0C1C572F6100B90E9B /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = F0F0DAFA1C572F4200B90E9B /* 4.wav */; };
+		F0F0DB0D1C572F6100B90E9B /* 5.wav in Resources */ = {isa = PBXBuildFile; fileRef = F0F0DAFB1C572F4200B90E9B /* 5.wav */; };
+		F0F0DB0E1C572F6100B90E9B /* 6.wav in Resources */ = {isa = PBXBuildFile; fileRef = F0F0DAFC1C572F4200B90E9B /* 6.wav */; };
+		F0F0DB0F1C572F6100B90E9B /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = F0F0DAFD1C572F4200B90E9B /* 7.wav */; };
+		F0F0DB101C572F6100B90E9B /* 8.wav in Resources */ = {isa = PBXBuildFile; fileRef = F0F0DAFE1C572F4200B90E9B /* 8.wav */; };
+		F0F0DB111C572F6100B90E9B /* 9.wav in Resources */ = {isa = PBXBuildFile; fileRef = F0F0DAFF1C572F4200B90E9B /* 9.wav */; };
+		F0F0DB131C573A8B00B90E9B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F0DB121C573A8B00B90E9B /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F02BCEE91474938900DC15D4 /* 0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 0.wav; sourceTree = "<group>"; };
-		F02BCEEA1474938900DC15D4 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
-		F02BCEEB1474938900DC15D4 /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
-		F02BCEEC1474938900DC15D4 /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
-		F02BCEED1474938900DC15D4 /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4.wav; sourceTree = "<group>"; };
-		F02BCEEE1474938900DC15D4 /* 5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5.wav; sourceTree = "<group>"; };
-		F02BCEEF1474938900DC15D4 /* 6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 6.wav; sourceTree = "<group>"; };
-		F02BCEF01474938900DC15D4 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
-		F02BCEF11474938900DC15D4 /* 8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8.wav; sourceTree = "<group>"; };
-		F02BCEF21474938900DC15D4 /* 9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9.wav; sourceTree = "<group>"; };
-		F02BCEFE1474946E00DC15D4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		F0A35ECA1C49BCF900DE49A1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		F0FE931B14746A2900CB474C /* PhoneInvaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneInvaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0FE931F14746A2900CB474C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		F0FE932114746A2900CB474C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F0FE932314746A2900CB474C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F0FE932514746A2900CB474C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		F0FE932714746A2900CB474C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		F0FE932B14746A2900CB474C /* PhoneInvaders-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhoneInvaders-Info.plist"; sourceTree = "<group>"; };
-		F0FE932D14746A2900CB474C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F0FE932F14746A2900CB474C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F0FE933114746A2900CB474C /* PhoneInvaders-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhoneInvaders-Prefix.pch"; sourceTree = "<group>"; };
-		F0FE933214746A2900CB474C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F0FE933314746A2900CB474C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F0FE933914746A2900CB474C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F0FE933A14746A2900CB474C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F0FE933D14746A2900CB474C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		F0FE934D14747BB500CB474C /* SpaceInvadersMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceInvadersMachine.h; sourceTree = "<group>"; };
-		F0FE934E14747BB500CB474C /* SpaceInvadersMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceInvadersMachine.m; sourceTree = "<group>"; };
-		F0FE935014747BBD00CB474C /* 8080emu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 8080emu.c; sourceTree = "<group>"; };
-		F0FE935114747BBD00CB474C /* 8080emu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 8080emu.h; sourceTree = "<group>"; };
-		F0FE935314747D9700CB474C /* invaders.e */ = {isa = PBXFileReference; lastKnownFileType = file; path = invaders.e; sourceTree = "<group>"; };
-		F0FE935414747D9700CB474C /* invaders.f */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.fortran; path = invaders.f; sourceTree = "<group>"; };
-		F0FE935514747D9700CB474C /* invaders.g */ = {isa = PBXFileReference; lastKnownFileType = file; path = invaders.g; sourceTree = "<group>"; };
-		F0FE935614747D9700CB474C /* invaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = invaders.h; sourceTree = "<group>"; };
+		F0F0D8F81C53E71800B90E9B /* PhoneInvaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneInvaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0F0D8FC1C53E71800B90E9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0F0D8FE1C53E71800B90E9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F0F0D8FF1C53E71800B90E9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F0F0D9011C53E71800B90E9B /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		F0F0D9031C53E71800B90E9B /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		F0F0D9051C53E71800B90E9B /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		F0F0D9061C53E71800B90E9B /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		F0F0D9091C53E71800B90E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0F0D90B1C53E71800B90E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0F0D90E1C53E71800B90E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0F0D9101C53E71800B90E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0F0D9161C54350C00B90E9B /* SpaceInvadersMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceInvadersMachine.h; sourceTree = "<group>"; };
+		F0F0D9171C54350C00B90E9B /* SpaceInvadersMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceInvadersMachine.m; sourceTree = "<group>"; };
+		F0F0D9351C552DD300B90E9B /* 8080emu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 8080emu.c; sourceTree = "<group>"; };
+		F0F0D9361C552DD300B90E9B /* 8080emu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 8080emu.h; sourceTree = "<group>"; };
+		F0F0DAF61C572F4200B90E9B /* 0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 0.wav; path = ../../../../Desktop/0.wav; sourceTree = "<group>"; };
+		F0F0DAF71C572F4200B90E9B /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 1.wav; path = ../../../../Desktop/1.wav; sourceTree = "<group>"; };
+		F0F0DAF81C572F4200B90E9B /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 2.wav; path = ../../../../Desktop/2.wav; sourceTree = "<group>"; };
+		F0F0DAF91C572F4200B90E9B /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 3.wav; path = ../../../../Desktop/3.wav; sourceTree = "<group>"; };
+		F0F0DAFA1C572F4200B90E9B /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 4.wav; path = ../../../../Desktop/4.wav; sourceTree = "<group>"; };
+		F0F0DAFB1C572F4200B90E9B /* 5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 5.wav; path = ../../../../Desktop/5.wav; sourceTree = "<group>"; };
+		F0F0DAFC1C572F4200B90E9B /* 6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 6.wav; path = ../../../../Desktop/6.wav; sourceTree = "<group>"; };
+		F0F0DAFD1C572F4200B90E9B /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 7.wav; path = ../../../../Desktop/7.wav; sourceTree = "<group>"; };
+		F0F0DAFE1C572F4200B90E9B /* 8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 8.wav; path = ../../../../Desktop/8.wav; sourceTree = "<group>"; };
+		F0F0DAFF1C572F4200B90E9B /* 9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 9.wav; path = ../../../../Desktop/9.wav; sourceTree = "<group>"; };
+		F0F0DB001C572F4B00B90E9B /* invaders.e */ = {isa = PBXFileReference; lastKnownFileType = file; name = invaders.e; path = ../../../../Desktop/invaders.e; sourceTree = "<group>"; };
+		F0F0DB011C572F4B00B90E9B /* invaders.f */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; name = invaders.f; path = ../../../../Desktop/invaders.f; sourceTree = "<group>"; };
+		F0F0DB021C572F4B00B90E9B /* invaders.g */ = {isa = PBXFileReference; lastKnownFileType = file; name = invaders.g; path = ../../../../Desktop/invaders.g; sourceTree = "<group>"; };
+		F0F0DB031C572F4B00B90E9B /* invaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = invaders.h; path = ../../../../Desktop/invaders.h; sourceTree = "<group>"; };
+		F0F0DB121C573A8B00B90E9B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F0FE931814746A2900CB474C /* Frameworks */ = {
+		F0F0D8F51C53E71800B90E9B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F02BCEFF1474946E00DC15D4 /* AVFoundation.framework in Frameworks */,
-				F0FE932014746A2900CB474C /* UIKit.framework in Frameworks */,
-				F0FE932214746A2900CB474C /* Foundation.framework in Frameworks */,
-				F0FE932414746A2900CB474C /* CoreGraphics.framework in Frameworks */,
-				F0FE932614746A2900CB474C /* GLKit.framework in Frameworks */,
-				F0FE932814746A2900CB474C /* OpenGLES.framework in Frameworks */,
+				F0F0DB131C573A8B00B90E9B /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F0FE931014746A2900CB474C = {
+		F0F0D8EF1C53E71800B90E9B = {
 			isa = PBXGroup;
 			children = (
-				F0A35ECA1C49BCF900DE49A1 /* Default-568h@2x.png */,
-				F0FE932914746A2900CB474C /* PhoneInvaders */,
-				F0FE931E14746A2900CB474C /* Frameworks */,
-				F0FE931C14746A2900CB474C /* Products */,
+				F0F0DB121C573A8B00B90E9B /* AVFoundation.framework */,
+				F0F0D8FA1C53E71800B90E9B /* PhoneInvaders */,
+				F0F0D8F91C53E71800B90E9B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F0FE931C14746A2900CB474C /* Products */ = {
+		F0F0D8F91C53E71800B90E9B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F0FE931B14746A2900CB474C /* PhoneInvaders.app */,
+				F0F0D8F81C53E71800B90E9B /* PhoneInvaders.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F0FE931E14746A2900CB474C /* Frameworks */ = {
+		F0F0D8FA1C53E71800B90E9B /* PhoneInvaders */ = {
 			isa = PBXGroup;
 			children = (
-				F02BCEFE1474946E00DC15D4 /* AVFoundation.framework */,
-				F0FE931F14746A2900CB474C /* UIKit.framework */,
-				F0FE932114746A2900CB474C /* Foundation.framework */,
-				F0FE932314746A2900CB474C /* CoreGraphics.framework */,
-				F0FE932514746A2900CB474C /* GLKit.framework */,
-				F0FE932714746A2900CB474C /* OpenGLES.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F0FE932914746A2900CB474C /* PhoneInvaders */ = {
-			isa = PBXGroup;
-			children = (
-				F0FE933214746A2900CB474C /* AppDelegate.h */,
-				F0FE933314746A2900CB474C /* AppDelegate.m */,
-				F0FE933914746A2900CB474C /* ViewController.h */,
-				F0FE933A14746A2900CB474C /* ViewController.m */,
-				F0FE934D14747BB500CB474C /* SpaceInvadersMachine.h */,
-				F0FE934E14747BB500CB474C /* SpaceInvadersMachine.m */,
-				F0FE935014747BBD00CB474C /* 8080emu.c */,
-				F0FE935114747BBD00CB474C /* 8080emu.h */,
-				F0FE933C14746A2900CB474C /* ViewController.xib */,
-				F0FE932A14746A2900CB474C /* Supporting Files */,
+				F0F0D9351C552DD300B90E9B /* 8080emu.c */,
+				F0F0D9361C552DD300B90E9B /* 8080emu.h */,
+				F0F0D8FE1C53E71800B90E9B /* AppDelegate.h */,
+				F0F0D8FF1C53E71800B90E9B /* AppDelegate.m */,
+				F0F0D9011C53E71800B90E9B /* Shader.fsh */,
+				F0F0D9031C53E71800B90E9B /* Shader.vsh */,
+				F0F0D9051C53E71800B90E9B /* GameViewController.h */,
+				F0F0D9061C53E71800B90E9B /* GameViewController.m */,
+				F0F0D9161C54350C00B90E9B /* SpaceInvadersMachine.h */,
+				F0F0D9171C54350C00B90E9B /* SpaceInvadersMachine.m */,
+				F0F0D9081C53E71800B90E9B /* Main.storyboard */,
+				F0F0D90B1C53E71800B90E9B /* Assets.xcassets */,
+				F0F0D90D1C53E71800B90E9B /* LaunchScreen.storyboard */,
+				F0F0D9101C53E71800B90E9B /* Info.plist */,
+				F0F0D8FB1C53E71800B90E9B /* Supporting Files */,
 			);
 			path = PhoneInvaders;
 			sourceTree = "<group>";
 		};
-		F0FE932A14746A2900CB474C /* Supporting Files */ = {
+		F0F0D8FB1C53E71800B90E9B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F02BCEE91474938900DC15D4 /* 0.wav */,
-				F02BCEEA1474938900DC15D4 /* 1.wav */,
-				F02BCEEB1474938900DC15D4 /* 2.wav */,
-				F02BCEEC1474938900DC15D4 /* 3.wav */,
-				F02BCEED1474938900DC15D4 /* 4.wav */,
-				F02BCEEE1474938900DC15D4 /* 5.wav */,
-				F02BCEEF1474938900DC15D4 /* 6.wav */,
-				F02BCEF01474938900DC15D4 /* 7.wav */,
-				F02BCEF11474938900DC15D4 /* 8.wav */,
-				F02BCEF21474938900DC15D4 /* 9.wav */,
-				F0FE935314747D9700CB474C /* invaders.e */,
-				F0FE935414747D9700CB474C /* invaders.f */,
-				F0FE935514747D9700CB474C /* invaders.g */,
-				F0FE935614747D9700CB474C /* invaders.h */,
-				F0FE932B14746A2900CB474C /* PhoneInvaders-Info.plist */,
-				F0FE932C14746A2900CB474C /* InfoPlist.strings */,
-				F0FE932F14746A2900CB474C /* main.m */,
-				F0FE933114746A2900CB474C /* PhoneInvaders-Prefix.pch */,
+				F0F0DB001C572F4B00B90E9B /* invaders.e */,
+				F0F0DB011C572F4B00B90E9B /* invaders.f */,
+				F0F0DB021C572F4B00B90E9B /* invaders.g */,
+				F0F0DB031C572F4B00B90E9B /* invaders.h */,
+				F0F0DAF61C572F4200B90E9B /* 0.wav */,
+				F0F0DAF71C572F4200B90E9B /* 1.wav */,
+				F0F0DAF81C572F4200B90E9B /* 2.wav */,
+				F0F0DAF91C572F4200B90E9B /* 3.wav */,
+				F0F0DAFA1C572F4200B90E9B /* 4.wav */,
+				F0F0DAFB1C572F4200B90E9B /* 5.wav */,
+				F0F0DAFC1C572F4200B90E9B /* 6.wav */,
+				F0F0DAFD1C572F4200B90E9B /* 7.wav */,
+				F0F0DAFE1C572F4200B90E9B /* 8.wav */,
+				F0F0DAFF1C572F4200B90E9B /* 9.wav */,
+				F0F0D8FC1C53E71800B90E9B /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -169,13 +144,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F0FE931A14746A2900CB474C /* PhoneInvaders */ = {
+		F0F0D8F71C53E71800B90E9B /* PhoneInvaders */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0FE934114746A2900CB474C /* Build configuration list for PBXNativeTarget "PhoneInvaders" */;
+			buildConfigurationList = F0F0D9131C53E71800B90E9B /* Build configuration list for PBXNativeTarget "PhoneInvaders" */;
 			buildPhases = (
-				F0FE931714746A2900CB474C /* Sources */,
-				F0FE931814746A2900CB474C /* Frameworks */,
-				F0FE931914746A2900CB474C /* Resources */,
+				F0F0D8F41C53E71800B90E9B /* Sources */,
+				F0F0D8F51C53E71800B90E9B /* Frameworks */,
+				F0F0D8F61C53E71800B90E9B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -183,111 +158,125 @@
 			);
 			name = PhoneInvaders;
 			productName = PhoneInvaders;
-			productReference = F0FE931B14746A2900CB474C /* PhoneInvaders.app */;
+			productReference = F0F0D8F81C53E71800B90E9B /* PhoneInvaders.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F0FE931214746A2900CB474C /* Project object */ = {
+		F0F0D8F01C53E71800B90E9B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Apple Inc.";
+				ORGANIZATIONNAME = "emulator 101";
+				TargetAttributes = {
+					F0F0D8F71C53E71800B90E9B = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
 			};
-			buildConfigurationList = F0FE931514746A2900CB474C /* Build configuration list for PBXProject "PhoneInvaders" */;
+			buildConfigurationList = F0F0D8F31C53E71800B90E9B /* Build configuration list for PBXProject "PhoneInvaders" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = F0FE931014746A2900CB474C;
-			productRefGroup = F0FE931C14746A2900CB474C /* Products */;
+			mainGroup = F0F0D8EF1C53E71800B90E9B;
+			productRefGroup = F0F0D8F91C53E71800B90E9B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F0FE931A14746A2900CB474C /* PhoneInvaders */,
+				F0F0D8F71C53E71800B90E9B /* PhoneInvaders */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F0FE931914746A2900CB474C /* Resources */ = {
+		F0F0D8F61C53E71800B90E9B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0FE935A14747DBF00CB474C /* invaders.f in Resources */,
-				F0FE935B14747DBF00CB474C /* invaders.h in Resources */,
-				F0FE932E14746A2900CB474C /* InfoPlist.strings in Resources */,
-				F0FE933E14746A2900CB474C /* ViewController.xib in Resources */,
-				F0FE935714747D9700CB474C /* invaders.e in Resources */,
-				F0FE935914747D9700CB474C /* invaders.g in Resources */,
-				F02BCEF31474938900DC15D4 /* 0.wav in Resources */,
-				F02BCEF41474938900DC15D4 /* 1.wav in Resources */,
-				F0A35ECB1C49BCF900DE49A1 /* Default-568h@2x.png in Resources */,
-				F02BCEF51474938900DC15D4 /* 2.wav in Resources */,
-				F02BCEF61474938900DC15D4 /* 3.wav in Resources */,
-				F02BCEF71474938900DC15D4 /* 4.wav in Resources */,
-				F02BCEF81474938900DC15D4 /* 5.wav in Resources */,
-				F02BCEF91474938900DC15D4 /* 6.wav in Resources */,
-				F02BCEFA1474938900DC15D4 /* 7.wav in Resources */,
-				F02BCEFB1474938900DC15D4 /* 8.wav in Resources */,
-				F02BCEFC1474938900DC15D4 /* 9.wav in Resources */,
+				F0F0DB041C572F6100B90E9B /* invaders.e in Resources */,
+				F0F0DB051C572F6100B90E9B /* invaders.f in Resources */,
+				F0F0DB061C572F6100B90E9B /* invaders.g in Resources */,
+				F0F0DB071C572F6100B90E9B /* invaders.h in Resources */,
+				F0F0DB081C572F6100B90E9B /* 0.wav in Resources */,
+				F0F0DB091C572F6100B90E9B /* 1.wav in Resources */,
+				F0F0DB0A1C572F6100B90E9B /* 2.wav in Resources */,
+				F0F0DB0B1C572F6100B90E9B /* 3.wav in Resources */,
+				F0F0DB0C1C572F6100B90E9B /* 4.wav in Resources */,
+				F0F0DB0D1C572F6100B90E9B /* 5.wav in Resources */,
+				F0F0DB0E1C572F6100B90E9B /* 6.wav in Resources */,
+				F0F0DB0F1C572F6100B90E9B /* 7.wav in Resources */,
+				F0F0DB101C572F6100B90E9B /* 8.wav in Resources */,
+				F0F0DB111C572F6100B90E9B /* 9.wav in Resources */,
+				F0F0D90A1C53E71800B90E9B /* Main.storyboard in Resources */,
+				F0F0D9041C53E71800B90E9B /* Shader.vsh in Resources */,
+				F0F0D90C1C53E71800B90E9B /* Assets.xcassets in Resources */,
+				F0F0D90F1C53E71800B90E9B /* LaunchScreen.storyboard in Resources */,
+				F0F0D9021C53E71800B90E9B /* Shader.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F0FE931714746A2900CB474C /* Sources */ = {
+		F0F0D8F41C53E71800B90E9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0FE933014746A2900CB474C /* main.m in Sources */,
-				F0FE933414746A2900CB474C /* AppDelegate.m in Sources */,
-				F0FE933B14746A2900CB474C /* ViewController.m in Sources */,
-				F0FE934F14747BB500CB474C /* SpaceInvadersMachine.m in Sources */,
-				F0FE935214747BBD00CB474C /* 8080emu.c in Sources */,
-				F0FE935814747D9700CB474C /* invaders.f in Sources */,
+				F0F0D9001C53E71800B90E9B /* AppDelegate.m in Sources */,
+				F0F0D9071C53E71800B90E9B /* GameViewController.m in Sources */,
+				F0F0D9181C54350C00B90E9B /* SpaceInvadersMachine.m in Sources */,
+				F0F0D9371C552DD300B90E9B /* 8080emu.c in Sources */,
+				F0F0D8FD1C53E71800B90E9B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F0FE932C14746A2900CB474C /* InfoPlist.strings */ = {
+		F0F0D9081C53E71800B90E9B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F0FE932D14746A2900CB474C /* en */,
+				F0F0D9091C53E71800B90E9B /* Base */,
 			);
-			name = InfoPlist.strings;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F0FE933C14746A2900CB474C /* ViewController.xib */ = {
+		F0F0D90D1C53E71800B90E9B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F0FE933D14746A2900CB474C /* en */,
+				F0F0D90E1C53E71800B90E9B /* Base */,
 			);
-			name = ViewController.xib;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F0FE933F14746A2900CB474C /* Debug */ = {
+		F0F0D9111C53E71800B90E9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -298,100 +287,100 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		F0FE934014746A2900CB474C /* Release */ = {
+		F0F0D9121C53E71800B90E9B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		F0FE934214746A2900CB474C /* Debug */ = {
+		F0F0D9141C53E71800B90E9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PhoneInvaders/PhoneInvaders-Prefix.pch";
-				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
-				INFOPLIST_FILE = "PhoneInvaders/PhoneInvaders-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.emulator101.${PRODUCT_NAME:rfc1034identifier}";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhoneInvaders/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emulator101.PhoneInvaders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		F0FE934314746A2900CB474C /* Release */ = {
+		F0F0D9151C53E71800B90E9B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PhoneInvaders/PhoneInvaders-Prefix.pch";
-				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
-				INFOPLIST_FILE = "PhoneInvaders/PhoneInvaders-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.emulator101.${PRODUCT_NAME:rfc1034identifier}";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhoneInvaders/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emulator101.PhoneInvaders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F0FE931514746A2900CB474C /* Build configuration list for PBXProject "PhoneInvaders" */ = {
+		F0F0D8F31C53E71800B90E9B /* Build configuration list for PBXProject "PhoneInvaders" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F0FE933F14746A2900CB474C /* Debug */,
-				F0FE934014746A2900CB474C /* Release */,
+				F0F0D9111C53E71800B90E9B /* Debug */,
+				F0F0D9121C53E71800B90E9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0FE934114746A2900CB474C /* Build configuration list for PBXNativeTarget "PhoneInvaders" */ = {
+		F0F0D9131C53E71800B90E9B /* Build configuration list for PBXNativeTarget "PhoneInvaders" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F0FE934214746A2900CB474C /* Debug */,
-				F0FE934314746A2900CB474C /* Release */,
+				F0F0D9141C53E71800B90E9B /* Debug */,
+				F0F0D9151C53E71800B90E9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F0FE931214746A2900CB474C /* Project object */;
+	rootObject = F0F0D8F01C53E71800B90E9B /* Project object */;
 }

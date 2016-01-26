@@ -1,45 +1,12 @@
 //
 //  SpaceInvadersMachine.m
-//  Invaders
+//  PhoneInvaders
 //
-//  Created by Emulator101 on 11/3/11.
-//
-//  This is a NSObject wrapper around the 8080 emulator and 
-//  All code that handles the specifics of the game implemenation.
-//
-/*
- This is free and unencumbered software released into the public domain.
- 
- Anyone is free to copy, modify, publish, use, compile, sell, or
- distribute this software, either in source code form or as a compiled
- binary, for any purpose, commercial or non-commercial, and by any
- means.
- 
- In jurisdictions that recognize copyright laws, the author or authors
- of this software dedicate any and all copyright interest in the
- software to the public domain. We make this dedication for the benefit
- of the public at large and to the detriment of our heirs and
- successors. We intend this dedication to be an overt act of
- relinquishment in perpetuity of all present and future rights to this
- software under copyright law.
- 
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
- EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
- IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
- OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
- ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
- OTHER DEALINGS IN THE SOFTWARE.
- 
- For more information, please refer to <http://unlicense.org/>
- */
 
 #import "SpaceInvadersMachine.h"
-
 #include <sys/time.h>
 
 @implementation SpaceInvadersMachine
-
 -(void) ReadFile:(NSString*)filename IntoMemoryAt:(uint32_t)memoffset
 {
     
@@ -93,17 +60,13 @@
 }
 
 
-- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
-    [player release];
-}
-
--(void) playSound:(NSString*)name
+-(void) playSoundFile:(NSString*)name
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:NULL];
-    AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];  
-    audioPlayer.delegate = self;
-    [audioPlayer play];
-    
+    NSError *error;
+    soundeffect = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:&error];
+    soundeffect.delegate = self;
+    [soundeffect play];
 }
 
 
@@ -115,7 +78,7 @@
         {
             //start UFO
             NSString *path = [[NSBundle mainBundle] pathForResource:@"0.wav" ofType:NULL];
-            ufo = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];  
+            ufo = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
             ufo.numberOfLoops=-1;
             [ufo play];
         }
@@ -125,38 +88,37 @@
             if (ufo)
             {
                 [ufo stop];
-                [ufo release];
                 ufo = NULL;
             }
         }
         
         if ( (out_port3 & 0x2) && !(last_out_port3 & 0x2))
-            [self playSound: @"1.wav"];
+            [self playSoundFile: @"1.wav"];
         
         if ( (out_port3 & 0x4) && !(last_out_port3 & 0x4))
-            [self playSound: @"2.wav"];
+            [self playSoundFile: @"2.wav"];
         
         if ( (out_port3 & 0x8) && !(last_out_port3 & 0x8))
-            [self playSound: @"3.wav"];
+            [self playSoundFile: @"3.wav"];
         
         last_out_port3 = out_port3;
     }
     if (out_port5 != last_out_port5)
     {
         if ( (out_port5 & 0x1) && !(last_out_port5 & 0x1))
-            [self playSound: @"4.wav"];
+            [self playSoundFile: @"4.wav"];
         
         if ( (out_port5 & 0x2) && !(last_out_port5 & 0x2))
-            [self playSound: @"5.wav"];
+            [self playSoundFile: @"5.wav"];
         
         if ( (out_port5 & 0x4) && !(last_out_port5 & 0x4))
-            [self playSound: @"6.wav"];
+            [self playSoundFile: @"6.wav"];
         
         if ( (out_port5 & 0x8) && !(last_out_port5 & 0x8))
-            [self playSound: @"7.wav"];
+            [self playSoundFile: @"7.wav"];
         
         if ( (out_port5 & 0x10) && !(last_out_port5 & 0x10))
-            [self playSound: @"8.wav"];
+            [self playSoundFile: @"8.wav"];
         
         last_out_port5 = out_port5;
     }
