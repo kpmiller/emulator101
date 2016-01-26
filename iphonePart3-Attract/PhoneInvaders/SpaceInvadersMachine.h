@@ -1,9 +1,10 @@
 //
 //  SpaceInvadersMachine.h
-//  Invaders
+//  PhoneInvaders
 //
-//  Created by Emulator 101 on 11/11/11.
-//
+
+#import <Foundation/Foundation.h>
+#include "8080emu.h"
 /*
  This is free and unencumbered software released into the public domain.
  
@@ -31,9 +32,6 @@
  For more information, please refer to <http://unlicense.org/>
  */
 
-#import <Foundation/Foundation.h>
-#include "8080emu.h"
-
 @interface SpaceInvadersMachine : NSObject
 {
     State8080   *state;
@@ -59,4 +57,5 @@
 -(void) startEmulation;
 
 -(void *) framebuffer;
+
 @end
