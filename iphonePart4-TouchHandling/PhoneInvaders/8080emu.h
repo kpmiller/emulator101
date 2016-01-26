@@ -8,7 +8,7 @@
 // right bits when.  For instance, some code
 // "pops" values into the PSW that they didn't push.
 //
-typedef struct ConditionCodes {
+typedef struct {
 	uint8_t		cy:1;
 	uint8_t		pad:1;
 	uint8_t		p:1;
@@ -19,7 +19,7 @@ typedef struct ConditionCodes {
 	uint8_t		s:1;
 } ConditionCodes;
 
-typedef struct State8080 {
+typedef struct  {
 	uint8_t		a;
 	uint8_t		b;
 	uint8_t		c;
@@ -30,7 +30,7 @@ typedef struct State8080 {
 	uint16_t	sp;
 	uint16_t	pc;
 	uint8_t		*memory;
-	struct ConditionCodes		cc;
+	ConditionCodes		cc;
 	uint8_t		int_enable;
 
 } State8080;

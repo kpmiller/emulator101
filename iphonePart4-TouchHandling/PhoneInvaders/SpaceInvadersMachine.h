@@ -1,9 +1,10 @@
 //
 //  SpaceInvadersMachine.h
-//  Invaders
+//  PhoneInvaders
 //
-//  Created by Emulator 101 on 11/11/11.
-//
+
+#import <Foundation/Foundation.h>
+#include "8080emu.h"
 /*
  This is free and unencumbered software released into the public domain.
  
@@ -30,9 +31,6 @@
  
  For more information, please refer to <http://unlicense.org/>
  */
-
-#import <Foundation/Foundation.h>
-#include "8080emu.h"
 
 #define BUTTON_COIN 'c'
 #define BUTTON_P1_LEFT 'a'
@@ -67,7 +65,6 @@
 -(void) startEmulation;
 
 -(void *) framebuffer;
-
 
 - (void) ButtonDown: (uint8_t) key;
 - (void) ButtonUp: (uint8_t) key;
