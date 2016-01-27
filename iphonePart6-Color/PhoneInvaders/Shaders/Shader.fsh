@@ -18,11 +18,10 @@ void main()
     {
         modColor  = vec4(1.0, 0.0, 0.0, 1.0);  //red
     }
-    else if (y < 0.3)
+    else if (y < 0.25)
     {
         if ((y > 0.06) || ((x > 0.08) && (x < 0.60)))
             modColor  = vec4(0.0, 1.0, 0.0, 1.0);
     }
-
     gl_FragColor = modColor * texColor;
 }
