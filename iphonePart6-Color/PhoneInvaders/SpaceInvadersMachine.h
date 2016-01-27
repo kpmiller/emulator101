@@ -57,7 +57,6 @@
     uint8_t     out_port3, out_port5, last_out_port3, last_out_port5;
     
     AVAudioPlayer *ufo;
-    AVAudioPlayer  *soundeffect;
 }
 
 @property NSMutableArray *soundeffects;
