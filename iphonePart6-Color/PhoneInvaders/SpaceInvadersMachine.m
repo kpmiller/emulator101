@@ -31,18 +31,23 @@
 
 -(id) init
 {
-    state = calloc(sizeof(State8080), 1);
-    state->memory = malloc(16 * 0x1000);    
-    
-	[self ReadFile:@"invaders.h" IntoMemoryAt:0];
-	[self ReadFile:@"invaders.g" IntoMemoryAt:0x800];
-	[self ReadFile:@"invaders.f" IntoMemoryAt:0x1000];
-	[self ReadFile:@"invaders.e" IntoMemoryAt:0x1800];
-    
-    in_port1 = 0;
-    out_port3 = last_out_port3 = 0;
-    out_port5 = last_out_port5 = 0;
-    
+    self = [super init];
+    if (self)
+    {
+        state = calloc(sizeof(State8080), 1);
+        state->memory = malloc(16 * 0x1000);    
+        
+        [self ReadFile:@"invaders.h" IntoMemoryAt:0];
+        [self ReadFile:@"invaders.g" IntoMemoryAt:0x800];
+        [self ReadFile:@"invaders.f" IntoMemoryAt:0x1000];
+        [self ReadFile:@"invaders.e" IntoMemoryAt:0x1800];
+        
+        in_port1 = 0;
+        out_port3 = last_out_port3 = 0;
+        out_port5 = last_out_port5 = 0;
+        
+        self.soundeffects = [[NSMutableArray alloc]init];
+    }
     return self;
 }
 
@@ -59,16 +64,20 @@
     return ((double)time.tv_sec * 1E6) + ((double)time.tv_usec);
 }
 
+- (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    [self.soundeffects removeObject:player];
+}
 
 -(void) playSoundFile:(NSString*)name
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:NULL];
     NSError *error;
-    soundeffect = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:&error];
-    soundeffect.delegate = self;
-    [soundeffect play];
+    AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:&error];
+    player.delegate = self;
+    [player play];
+    [self.soundeffects addObject:player];
 }
-
 
 -(void) PlaySounds
 {
