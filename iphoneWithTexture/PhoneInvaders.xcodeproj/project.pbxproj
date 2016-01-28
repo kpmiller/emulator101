@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F048AB0F1C59DFA2006D938C /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F048AB0E1C59DFA2006D938C /* background.jpg */; };
+		F0F0D8FD1C53E71800B90E9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D8FC1C53E71800B90E9B /* main.m */; };
+		F0F0D9001C53E71800B90E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D8FF1C53E71800B90E9B /* AppDelegate.m */; };
+		F0F0D9021C53E71800B90E9B /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = F0F0D9011C53E71800B90E9B /* Shader.fsh */; };
+		F0F0D9041C53E71800B90E9B /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = F0F0D9031C53E71800B90E9B /* Shader.vsh */; };
+		F0F0D9071C53E71800B90E9B /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D9061C53E71800B90E9B /* GameViewController.m */; };
+		F0F0D90A1C53E71800B90E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0F0D9081C53E71800B90E9B /* Main.storyboard */; };
+		F0F0D90C1C53E71800B90E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0F0D90B1C53E71800B90E9B /* Assets.xcassets */; };
+		F0F0D90F1C53E71800B90E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0F0D90D1C53E71800B90E9B /* LaunchScreen.storyboard */; };
+		F0F0D9181C54350C00B90E9B /* SpaceInvadersMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D9171C54350C00B90E9B /* SpaceInvadersMachine.m */; };
+		F0F0D9371C552DD300B90E9B /* 8080emu.c in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D9351C552DD300B90E9B /* 8080emu.c */; };
+		F0F0DB131C573A8B00B90E9B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F0DB121C573A8B00B90E9B /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F048AB0E1C59DFA2006D938C /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		F0F0D8F81C53E71800B90E9B /* PhoneInvaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneInvaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0F0D8FC1C53E71800B90E9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0F0D8FE1C53E71800B90E9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F0F0D8FF1C53E71800B90E9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F0F0D9011C53E71800B90E9B /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		F0F0D9031C53E71800B90E9B /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		F0F0D9051C53E71800B90E9B /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		F0F0D9061C53E71800B90E9B /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		F0F0D9091C53E71800B90E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0F0D90B1C53E71800B90E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0F0D90E1C53E71800B90E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0F0D9101C53E71800B90E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0F0D9161C54350C00B90E9B /* SpaceInvadersMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceInvadersMachine.h; sourceTree = "<group>"; };
+		F0F0D9171C54350C00B90E9B /* SpaceInvadersMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceInvadersMachine.m; sourceTree = "<group>"; };
+		F0F0D9351C552DD300B90E9B /* 8080emu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 8080emu.c; sourceTree = "<group>"; };
+		F0F0D9361C552DD300B90E9B /* 8080emu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 8080emu.h; sourceTree = "<group>"; };
+		F0F0DB121C573A8B00B90E9B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0F0D8F51C53E71800B90E9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0F0DB131C573A8B00B90E9B /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0F0D8EF1C53E71800B90E9B = {
+			isa = PBXGroup;
+			children = (
+				F0F0DB121C573A8B00B90E9B /* AVFoundation.framework */,
+				F0F0D8FA1C53E71800B90E9B /* PhoneInvaders */,
+				F0F0D8F91C53E71800B90E9B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0F0D8F91C53E71800B90E9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0F0D8F81C53E71800B90E9B /* PhoneInvaders.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0F0D8FA1C53E71800B90E9B /* PhoneInvaders */ = {
+			isa = PBXGroup;
+			children = (
+				F0F0D9351C552DD300B90E9B /* 8080emu.c */,
+				F0F0D9361C552DD300B90E9B /* 8080emu.h */,
+				F0F0D8FE1C53E71800B90E9B /* AppDelegate.h */,
+				F0F0D8FF1C53E71800B90E9B /* AppDelegate.m */,
+				F0F0D9011C53E71800B90E9B /* Shader.fsh */,
+				F0F0D9031C53E71800B90E9B /* Shader.vsh */,
+				F0F0D9051C53E71800B90E9B /* GameViewController.h */,
+				F0F0D9061C53E71800B90E9B /* GameViewController.m */,
+				F0F0D9161C54350C00B90E9B /* SpaceInvadersMachine.h */,
+				F0F0D9171C54350C00B90E9B /* SpaceInvadersMachine.m */,
+				F0F0D9081C53E71800B90E9B /* Main.storyboard */,
+				F0F0D90B1C53E71800B90E9B /* Assets.xcassets */,
+				F0F0D90D1C53E71800B90E9B /* LaunchScreen.storyboard */,
+				F0F0D9101C53E71800B90E9B /* Info.plist */,
+				F0F0D8FB1C53E71800B90E9B /* Supporting Files */,
+			);
+			path = PhoneInvaders;
+			sourceTree = "<group>";
+		};
+		F0F0D8FB1C53E71800B90E9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F048AB0E1C59DFA2006D938C /* background.jpg */,
+				F0F0D8FC1C53E71800B90E9B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0F0D8F71C53E71800B90E9B /* PhoneInvaders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0F0D9131C53E71800B90E9B /* Build configuration list for PBXNativeTarget "PhoneInvaders" */;
+			buildPhases = (
+				F0F0D8F41C53E71800B90E9B /* Sources */,
+				F0F0D8F51C53E71800B90E9B /* Frameworks */,
+				F0F0D8F61C53E71800B90E9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhoneInvaders;
+			productName = PhoneInvaders;
+			productReference = F0F0D8F81C53E71800B90E9B /* PhoneInvaders.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0F0D8F01C53E71800B90E9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "emulator 101";
+				TargetAttributes = {
+					F0F0D8F71C53E71800B90E9B = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5567AVSWN3;
+					};
+				};
+			};
+			buildConfigurationList = F0F0D8F31C53E71800B90E9B /* Build configuration list for PBXProject "PhoneInvaders" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0F0D8EF1C53E71800B90E9B;
+			productRefGroup = F0F0D8F91C53E71800B90E9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0F0D8F71C53E71800B90E9B /* PhoneInvaders */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0F0D8F61C53E71800B90E9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F048AB0F1C59DFA2006D938C /* background.jpg in Resources */,
+				F0F0D90A1C53E71800B90E9B /* Main.storyboard in Resources */,
+				F0F0D9041C53E71800B90E9B /* Shader.vsh in Resources */,
+				F0F0D90C1C53E71800B90E9B /* Assets.xcassets in Resources */,
+				F0F0D90F1C53E71800B90E9B /* LaunchScreen.storyboard in Resources */,
+				F0F0D9021C53E71800B90E9B /* Shader.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0F0D8F41C53E71800B90E9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0F0D9001C53E71800B90E9B /* AppDelegate.m in Sources */,
+				F0F0D9071C53E71800B90E9B /* GameViewController.m in Sources */,
+				F0F0D9181C54350C00B90E9B /* SpaceInvadersMachine.m in Sources */,
+				F0F0D9371C552DD300B90E9B /* 8080emu.c in Sources */,
+				F0F0D8FD1C53E71800B90E9B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F0F0D9081C53E71800B90E9B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0F0D9091C53E71800B90E9B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0F0D90D1C53E71800B90E9B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0F0D90E1C53E71800B90E9B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0F0D9111C53E71800B90E9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F0F0D9121C53E71800B90E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0F0D9141C53E71800B90E9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PhoneInvaders/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emulator101.PhoneInvaders;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		F0F0D9151C53E71800B90E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PhoneInvaders/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emulator101.PhoneInvaders;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0F0D8F31C53E71800B90E9B /* Build configuration list for PBXProject "PhoneInvaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0F0D9111C53E71800B90E9B /* Debug */,
+				F0F0D9121C53E71800B90E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0F0D9131C53E71800B90E9B /* Build configuration list for PBXNativeTarget "PhoneInvaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0F0D9141C53E71800B90E9B /* Debug */,
+				F0F0D9151C53E71800B90E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0F0D8F01C53E71800B90E9B /* Project object */;
+}
