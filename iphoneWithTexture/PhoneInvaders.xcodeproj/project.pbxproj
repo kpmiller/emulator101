@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		F048AB0F1C59DFA2006D938C /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F048AB0E1C59DFA2006D938C /* background.jpg */; };
+		F048AB561C59E356006D938C /* 0.wav in Resources */ = {isa = PBXBuildFile; fileRef = F048AB481C59E345006D938C /* 0.wav */; };
+		F048AB571C59E356006D938C /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = F048AB491C59E345006D938C /* 1.wav */; };
+		F048AB581C59E356006D938C /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = F048AB4A1C59E345006D938C /* 2.wav */; };
+		F048AB591C59E356006D938C /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = F048AB4B1C59E345006D938C /* 3.wav */; };
+		F048AB5A1C59E356006D938C /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = F048AB4C1C59E345006D938C /* 4.wav */; };
+		F048AB5B1C59E356006D938C /* 5.wav in Resources */ = {isa = PBXBuildFile; fileRef = F048AB4D1C59E345006D938C /* 5.wav */; };
+		F048AB5C1C59E356006D938C /* 6.wav in Resources */ = {isa = PBXBuildFile; fileRef = F048AB4E1C59E345006D938C /* 6.wav */; };
+		F048AB5D1C59E356006D938C /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = F048AB4F1C59E345006D938C /* 7.wav */; };
+		F048AB5E1C59E356006D938C /* 8.wav in Resources */ = {isa = PBXBuildFile; fileRef = F048AB501C59E345006D938C /* 8.wav */; };
+		F048AB5F1C59E356006D938C /* 9.wav in Resources */ = {isa = PBXBuildFile; fileRef = F048AB511C59E345006D938C /* 9.wav */; };
+		F048AB601C59E356006D938C /* invaders.e in Resources */ = {isa = PBXBuildFile; fileRef = F048AB521C59E345006D938C /* invaders.e */; };
+		F048AB611C59E356006D938C /* invaders.f in Resources */ = {isa = PBXBuildFile; fileRef = F048AB531C59E345006D938C /* invaders.f */; };
+		F048AB621C59E356006D938C /* invaders.g in Resources */ = {isa = PBXBuildFile; fileRef = F048AB541C59E345006D938C /* invaders.g */; };
+		F048AB631C59E356006D938C /* invaders.h in Resources */ = {isa = PBXBuildFile; fileRef = F048AB551C59E345006D938C /* invaders.h */; };
 		F0F0D8FD1C53E71800B90E9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D8FC1C53E71800B90E9B /* main.m */; };
 		F0F0D9001C53E71800B90E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D8FF1C53E71800B90E9B /* AppDelegate.m */; };
 		F0F0D9021C53E71800B90E9B /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = F0F0D9011C53E71800B90E9B /* Shader.fsh */; };
@@ -23,6 +37,20 @@
 
 /* Begin PBXFileReference section */
 		F048AB0E1C59DFA2006D938C /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		F048AB481C59E345006D938C /* 0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 0.wav; sourceTree = "<group>"; };
+		F048AB491C59E345006D938C /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
+		F048AB4A1C59E345006D938C /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
+		F048AB4B1C59E345006D938C /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
+		F048AB4C1C59E345006D938C /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4.wav; sourceTree = "<group>"; };
+		F048AB4D1C59E345006D938C /* 5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5.wav; sourceTree = "<group>"; };
+		F048AB4E1C59E345006D938C /* 6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 6.wav; sourceTree = "<group>"; };
+		F048AB4F1C59E345006D938C /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 7.wav; sourceTree = "<group>"; };
+		F048AB501C59E345006D938C /* 8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 8.wav; sourceTree = "<group>"; };
+		F048AB511C59E345006D938C /* 9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 9.wav; sourceTree = "<group>"; };
+		F048AB521C59E345006D938C /* invaders.e */ = {isa = PBXFileReference; lastKnownFileType = file; path = invaders.e; sourceTree = "<group>"; };
+		F048AB531C59E345006D938C /* invaders.f */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = invaders.f; sourceTree = "<group>"; };
+		F048AB541C59E345006D938C /* invaders.g */ = {isa = PBXFileReference; lastKnownFileType = file; path = invaders.g; sourceTree = "<group>"; };
+		F048AB551C59E345006D938C /* invaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = invaders.h; sourceTree = "<group>"; };
 		F0F0D8F81C53E71800B90E9B /* PhoneInvaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneInvaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0F0D8FC1C53E71800B90E9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0F0D8FE1C53E71800B90E9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,6 +124,20 @@
 		F0F0D8FB1C53E71800B90E9B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F048AB481C59E345006D938C /* 0.wav */,
+				F048AB491C59E345006D938C /* 1.wav */,
+				F048AB4A1C59E345006D938C /* 2.wav */,
+				F048AB4B1C59E345006D938C /* 3.wav */,
+				F048AB4C1C59E345006D938C /* 4.wav */,
+				F048AB4D1C59E345006D938C /* 5.wav */,
+				F048AB4E1C59E345006D938C /* 6.wav */,
+				F048AB4F1C59E345006D938C /* 7.wav */,
+				F048AB501C59E345006D938C /* 8.wav */,
+				F048AB511C59E345006D938C /* 9.wav */,
+				F048AB521C59E345006D938C /* invaders.e */,
+				F048AB531C59E345006D938C /* invaders.f */,
+				F048AB541C59E345006D938C /* invaders.g */,
+				F048AB551C59E345006D938C /* invaders.h */,
 				F048AB0E1C59DFA2006D938C /* background.jpg */,
 				F0F0D8FC1C53E71800B90E9B /* main.m */,
 			);
@@ -160,6 +202,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F048AB561C59E356006D938C /* 0.wav in Resources */,
+				F048AB571C59E356006D938C /* 1.wav in Resources */,
+				F048AB581C59E356006D938C /* 2.wav in Resources */,
+				F048AB591C59E356006D938C /* 3.wav in Resources */,
+				F048AB5A1C59E356006D938C /* 4.wav in Resources */,
+				F048AB5B1C59E356006D938C /* 5.wav in Resources */,
+				F048AB5C1C59E356006D938C /* 6.wav in Resources */,
+				F048AB5D1C59E356006D938C /* 7.wav in Resources */,
+				F048AB5E1C59E356006D938C /* 8.wav in Resources */,
+				F048AB5F1C59E356006D938C /* 9.wav in Resources */,
+				F048AB601C59E356006D938C /* invaders.e in Resources */,
+				F048AB611C59E356006D938C /* invaders.f in Resources */,
+				F048AB621C59E356006D938C /* invaders.g in Resources */,
+				F048AB631C59E356006D938C /* invaders.h in Resources */,
 				F048AB0F1C59DFA2006D938C /* background.jpg in Resources */,
 				F0F0D90A1C53E71800B90E9B /* Main.storyboard in Resources */,
 				F0F0D9041C53E71800B90E9B /* Shader.vsh in Resources */,
