@@ -1,4 +1,4 @@
-#format is opcode/nemonic/addressing mode/bytes/cycles/flags
+opcode,nemonic,addressing mode,bytes,cycles,flags
 0x69,ADC,IMM,2,2,CZidbVN
 0x65,ADC,ZP,2,3,CZidbVN
 0x75,ADC,ZPX,2,4,CZidbVN
