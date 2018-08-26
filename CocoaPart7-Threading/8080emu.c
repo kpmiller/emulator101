@@ -25,7 +25,7 @@
  For more information, please refer to <http://unlicense.org/>
  */
 
-#include "8080Emu.h"
+#include "8080emu.h"
 
 #define PRINTOPS 0
 
