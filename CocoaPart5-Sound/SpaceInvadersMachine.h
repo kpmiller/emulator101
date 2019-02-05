@@ -58,6 +58,8 @@
     uint8_t     shift_offset;         // offset for external shift hardware
     
     uint8_t     in_port1;
+    BOOL        paused;
+
     //output ports for sounds
     uint8_t     out_port3, out_port5, last_out_port3, last_out_port5;  
 

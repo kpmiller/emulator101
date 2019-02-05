@@ -57,6 +57,7 @@
     uint8_t     shift_offset;         // offset for external shift hardware
     
     uint8_t     in_port1;
+    BOOL        paused;
 }
 
 -(double) timeusec;

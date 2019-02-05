@@ -250,6 +250,7 @@
 
 - (void) startEmulation
 {
+    lastTimer = [self timeusec];
     emulatorTimer = [NSTimer scheduledTimerWithTimeInterval: 0.001
                                                      target: self
                                                    selector:@selector(doCPU)
@@ -274,6 +275,19 @@
             break;
         case KEY_P1_START:
             in_port1 |= 0x04;
+            break;
+        case KEY_PAUSE:
+            if (paused)
+            {
+                [self startEmulation];
+                paused = NO;
+            }
+            else
+            {
+                [emulatorTimer invalidate];
+                emulatorTimer = nil;
+                paused = YES;
+            }
             break;
     }
 }
