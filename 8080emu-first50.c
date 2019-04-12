@@ -825,7 +825,7 @@ int Emulate8080Op(State8080* state)
 				state->cc.z  = (0x01 == (psw & 0x01));
 				state->cc.s  = (0x02 == (psw & 0x02));
 				state->cc.p  = (0x04 == (psw & 0x04));
-				state->cc.cy = (0x05 == (psw & 0x08));
+				state->cc.cy = (0x08 == (psw & 0x08));
 				state->cc.ac = (0x10 == (psw & 0x10));
 				state->sp += 2;
 			}
