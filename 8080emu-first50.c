@@ -172,7 +172,7 @@ int Disassemble8080Op(unsigned char *codebuffer, int pc)
 		case 0x70: printf("MOV    M,B"); break;
 		case 0x71: printf("MOV    M,C"); break;
 		case 0x72: printf("MOV    M,D"); break;
-		case 0x73: printf("MOV    M.E"); break;
+		case 0x73: printf("MOV    M,E"); break;
 		case 0x74: printf("MOV    M,H"); break;
 		case 0x75: printf("MOV    M,L"); break;
 		case 0x76: printf("HLT");        break;
