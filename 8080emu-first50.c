@@ -300,7 +300,7 @@ int Disassemble8080Op(unsigned char *codebuffer, int pc)
 		case 0xe9: printf("PCHL");break;
 		case 0xea: printf("JPE    $%02x%02x",code[2],code[1]); opbytes = 3; break;
 		case 0xeb: printf("XCHG"); break;
-		case 0xec: printf("CPE     $%02x%02x",code[2],code[1]); opbytes = 3; break;
+		case 0xec: printf("CPE    $%02x%02x",code[2],code[1]); opbytes = 3; break;
 		case 0xed: printf("CALL   $%02x%02x",code[2],code[1]); opbytes = 3; break;
 		case 0xee: printf("XRI    #$%02x",code[1]); opbytes = 2; break;
 		case 0xef: printf("RST    5"); break;
