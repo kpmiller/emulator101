@@ -155,7 +155,7 @@ int Disassemble8080Op(unsigned char *codebuffer, int pc)
 		case 0x60: printf("MOV    H,B"); break;
 		case 0x61: printf("MOV    H,C"); break;
 		case 0x62: printf("MOV    H,D"); break;
-		case 0x63: printf("MOV    H.E"); break;
+		case 0x63: printf("MOV    H,E"); break;
 		case 0x64: printf("MOV    H,H"); break;
 		case 0x65: printf("MOV    H,L"); break;
 		case 0x66: printf("MOV    H,M"); break;
