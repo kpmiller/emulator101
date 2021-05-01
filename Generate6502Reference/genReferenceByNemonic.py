@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 import os, sys, csv
 
 
@@ -22,17 +22,21 @@ printFlags = {
 ############################################################################
 
 if len(sys.argv) != 2:
-	print "Usage: %s ops.csv" % (sys.argv[0])
-	print "  where ops.csv is a csv file with the format"
-	print "  opcode,nmeonic,addressing mode,bytes,cycles,flags"
+	print("Usage: %s ops.csv" % (sys.argv[0]))
+	print("  where ops.csv is a csv file with the format")
+	print("  opcode,nmeonic,addressing mode,bytes,cycles,flags")
 	sys.exit(1)
 	
-ops=csv.reader(open(sys.argv[1], 'rb'))
+ops=csv.reader(open(sys.argv[1], 'r'))
 
 opdict = {}
 for op in ops:
 	#ignore lines of formats I don't recognize
 	# allows for blanks and comments
+	if len(op) == 0:
+		continue
+	if op[0] == 'opcode':
+		continue #header
 	if len(op) == 6:
 		opcode=int(op[0],16)
 		opdict[opcode] = [op[1], op[2], op[3], op[4], op[5]]
@@ -58,24 +62,24 @@ addressModeSort = {
 }
 
 alphainstructions = {}
-opcodes = opdict.keys()
+opcodes = list(opdict.keys())
 
 for op in opcodes:
 	addressingMode = opdict[op][1]
 	opname = opdict[op][0] + addressModeSort[addressingMode]
 	alphainstructions[opname] = op
 
-instructions = alphainstructions.keys()
+instructions = list(alphainstructions.keys())
 instructions.sort()
 
-print "<table>"
-print """<tr>
+print("<table>")
+print("""<tr>
 <th>Instruction</th>
 <th>Addressing Mode</th>
 <th>Opcode</th>
 <th>Flags</th>
 </tr>
-"""
+""")
 for i in instructions:
 	opcode = alphainstructions[i]
 	opinfo = opdict[opcode]
@@ -114,7 +118,7 @@ for i in instructions:
 	
 	row = row + "<td>$%02x</td>" % (opcode)
 	row = row + "<td>" + printFlags[opdict[opcode][4]] + "</td></tr>"
-	print row
+	print(row)
 	 
-print "</table>"
+print("</table>")
 
