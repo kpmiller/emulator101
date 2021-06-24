@@ -155,7 +155,7 @@ int Disassemble8080Op(unsigned char *codebuffer, int pc)
 		case 0x60: printf("MOV    H,B"); break;
 		case 0x61: printf("MOV    H,C"); break;
 		case 0x62: printf("MOV    H,D"); break;
-		case 0x63: printf("MOV    H.E"); break;
+		case 0x63: printf("MOV    H,E"); break;
 		case 0x64: printf("MOV    H,H"); break;
 		case 0x65: printf("MOV    H,L"); break;
 		case 0x66: printf("MOV    H,M"); break;
@@ -172,7 +172,7 @@ int Disassemble8080Op(unsigned char *codebuffer, int pc)
 		case 0x70: printf("MOV    M,B"); break;
 		case 0x71: printf("MOV    M,C"); break;
 		case 0x72: printf("MOV    M,D"); break;
-		case 0x73: printf("MOV    M.E"); break;
+		case 0x73: printf("MOV    M,E"); break;
 		case 0x74: printf("MOV    M,H"); break;
 		case 0x75: printf("MOV    M,L"); break;
 		case 0x76: printf("HLT");        break;
@@ -300,7 +300,7 @@ int Disassemble8080Op(unsigned char *codebuffer, int pc)
 		case 0xe9: printf("PCHL");break;
 		case 0xea: printf("JPE    $%02x%02x",code[2],code[1]); opbytes = 3; break;
 		case 0xeb: printf("XCHG"); break;
-		case 0xec: printf("CPE     $%02x%02x",code[2],code[1]); opbytes = 3; break;
+		case 0xec: printf("CPE    $%02x%02x",code[2],code[1]); opbytes = 3; break;
 		case 0xed: printf("CALL   $%02x%02x",code[2],code[1]); opbytes = 3; break;
 		case 0xee: printf("XRI    #$%02x",code[1]); opbytes = 2; break;
 		case 0xef: printf("RST    5"); break;
